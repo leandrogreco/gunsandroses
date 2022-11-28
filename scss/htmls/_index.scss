@@ -1,6 +1,6 @@
 body {
     /*para el footer fijo*/
-    display: flex;
+    @extend %estiloflex;
     flex-direction: column;
     min-height: 100vh;
     header {
@@ -10,22 +10,20 @@ body {
         }
     }
     main {
-        display: flex;
+        @extend %estiloflex;
         flex-wrap: wrap;
         margin: 5px;
         padding-top: 100px;
         justify-content: space-around;
     }
     footer {
-        h2{
-            @include h2;           
+        h2 {
+            @include h2;
         }
         /*para el footer fijo*/
         margin-top: auto;
     }
-      
 }
-/* estilo del body */
 .navbar-toggler {
     color: $color-paleta-uno;
 }
@@ -53,18 +51,31 @@ body {
     font-size: 1.25rem;
 }
 @media screen and (max-width:991.98px) {
-    /*botones del header*/
+    /*letras guns and roses del header*/
+    body {
+        header {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
     .formato-botones {
         font-size: 1rem;
     }
-    /*imagen del home*/
-    main div p img {
-        width: min-content;
+    body {
+        main {
+            div {
+                p {
+                    img {
+                        width: min-content;
+                    }
+                }
+            }
+        }
     }
-    /*texto del home*/
     .detalle-texto {
         padding: 0 30px;
-        font-size: 1.2rem;
+        font-size: 15px;
         width: max-content;
     }
 }

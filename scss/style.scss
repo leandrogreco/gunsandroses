@@ -1,12 +1,12 @@
-//reset
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box - sizing: border - box;
 }
 //import de archivos secundarios
 @import "utilidades/variables";
 @import "utilidades/mixin";
+@import "utilidades/extend";
 @import "htmls/index";
 @import "htmls/galeria";
 @import "htmls/discografia";

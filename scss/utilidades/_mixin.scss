@@ -1,5 +1,5 @@
 @mixin encabezado {
-    display: flex;
+    @extend %estiloflex;
     justify-content: space-between;
     align-items: center;
     background-color: $color-fondo;
@@ -18,13 +18,13 @@
     font-size: 45px;
 }
 @mixin h2 {
-    display: flex;
+    @extend %estiloflex;
     padding: 15px;
-    background-color:$color-fondo;
+    background-color: $color-fondo;
     text-align: center;
     Justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     color: $color-paleta-uno;
-    font-size: 8px; 
+    font-size: 8px;
 }

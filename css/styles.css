@@ -45,7 +45,6 @@ body {
       color: #d4cfa5;
       font-size: 8px; }
 
-/* estilo del body */
 .navbar-toggler {
   color: #d4cfa5; }
 
@@ -73,20 +72,24 @@ body {
   font-size: 1.25rem; }
 
 @media screen and (max-width: 991.98px) {
-  /*botones del header*/
+  /*letras guns and roses del header*/
+  body header h1 {
+    font-size: 35px; }
   .formato-botones {
     font-size: 1rem; }
-  /*imagen del home*/
-  main div p img {
+  body main div p img {
     width: min-content; }
-  /*texto del home*/
   .detalle-texto {
     padding: 0 30px;
-    font-size: 1.2rem;
+    font-size: 15px;
     width: max-content; } }
 
 .item-galery {
   max-width: 95vh; }
+
+@media screen and (max-width: 991.98px) {
+  .item-galery {
+    margin-top: 50px; } }
 
 .albums {
   display: grid;
@@ -157,3 +160,75 @@ body {
   width: 300px;
   height: 300px;
   box-shadow: 10px 10px 15px #230b00; }
+
+@media screen and (max-width: 991.98px) {
+  .albums {
+    column-gap: 10px;
+    row-gap: 10px; }
+  .letra-disco {
+    padding-top: 15px;
+    font-size: 10px;
+    line-height: 9.5px; }
+  .tamanoalbum {
+    width: 150px;
+    height: 150px; } }
+
+.form {
+  width: 250px;
+  height: 380px;
+  background: #eae3d1;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px 0 #000;
+  margin: calc(38vh - 220px) auto;
+  padding: 10px 20px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  position: relative; }
+
+main form p input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Dancing Script', cursive;
+  transition: all 0.3s;
+  border-bottom: 2px solid #230b00; }
+
+main form buttonform {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border-radius: 8px;
+  font-family: 'Dancing Script', cursive;
+  border: 2px solid #230b00;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s; }
+
+input:focus {
+  border-bottom: 2px solid #78788c; }
+
+buttonform:hover {
+  background: #230b00;
+  color: #e6e6e6; }
+
+span {
+  margin: 0 5px 0 15px; }
+
+@media screen and (max-width: 991.98px) {
+  .form {
+    width: 150px;
+    height: 250px; }
+  body main form h2 {
+    font-size: 10px;
+    text-align: center; }
+  body main form p {
+    font-size: 10px;
+    text-align: center; }
+  body main form buttonform {
+    font-size: 10px; } }
