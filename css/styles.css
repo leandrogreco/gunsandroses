@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+body, body header, body main, body footer h2 {
+  display: flex; }
+
 body {
   /*para el footer fijo*/
-  display: flex;
   flex-direction: column;
   min-height: 100vh; }
   body header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #230b00;
@@ -26,7 +27,6 @@ body {
       font-family: 'Six Caps', sans-serif;
       font-size: 45px; }
   body main {
-    display: flex;
     flex-wrap: wrap;
     margin: 5px;
     padding-top: 100px;
@@ -35,7 +35,6 @@ body {
     /*para el footer fijo*/
     margin-top: auto; }
     body footer h2 {
-      display: flex;
       padding: 15px;
       background-color: #230b00;
       text-align: center;
