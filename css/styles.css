@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body, body header, body main, body footer h2 {
+body, body main {
   display: flex; }
 
 body {
@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh; }
   body header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #230b00;
@@ -37,6 +38,7 @@ body {
     /*para el footer fijo*/
     margin-top: auto; }
     body footer h2 {
+      display: flex;
       padding: 15px;
       background-color: #230b00;
       text-align: center;
