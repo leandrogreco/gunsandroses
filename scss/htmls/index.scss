@@ -1,0 +1,96 @@
+body {
+    /*para el footer fijo*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    header {
+        @include encabezado;
+        h1 {
+            @include h1;
+        }
+    }
+    main {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding-top: 100px;
+        justify-content: space-around;
+    }
+    footer {
+        h2{
+            @include h2;           
+        }
+        /*para el footer fijo*/
+        margin-top: auto;
+    }
+      
+}
+/* estilo del body */
+.navbar-toggler {
+    color: $color-paleta-uno;
+}
+.navbar-collapse {
+    text-align: center;
+}
+.formato-menu {
+    background-color: $color-fondo;
+}
+.formato-botones {
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    color: $color-paleta-uno;
+    text-shadow: 3px 3px 3px $color-text-shadow;
+    background-color: $color-fondo;
+    font-size: 22px;
+}
+.detalle-texto {
+    display: block;
+    text-align: justify;
+    width: 900px;
+    font-family: 'Dancing Script', cursive;
+    color: $color-fondo;
+    text-shadow: 3px 7px 10px $color-fondo;
+    font-size: 21px;
+}
+
+@media screen and (max-width:575.98px) {
+    /*letras guns and roses del header*/
+    h1 {
+        font-size: 35px;
+    }
+    /*botones del header*/
+    .formato-botones {
+        font-size: 15px;
+    }
+    /*imagen del home*/
+    main div p img {
+        width: min-content;
+    }
+    /*texto del home*/
+    .detalle-texto {
+        padding: 0 30px;
+        font-size: 15px;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    /*letras guns and roses del header*/
+    h1 {
+        font-size: 35px;
+    }
+    /*botones del header*/
+    .formato-botones {
+        font-size: 15px;
+    }
+    /*imagen del home*/
+    main div p img {
+        width: min-content;
+    }
+    /*texto del home*/
+    .detalle-texto {
+        padding: 0 30px;
+        font-size: 15px;
+        width: max-content;
+    }
+}

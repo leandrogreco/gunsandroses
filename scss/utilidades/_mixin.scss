@@ -1,0 +1,30 @@
+@mixin encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-fondo;
+    /*para que se aleje del lateral*/
+    padding: 0 30px;
+    /*para que la barra quede fija*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+@mixin h1 {
+    margin-top: 8px;
+    color: $color-paleta-uno;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 45px;
+}
+@mixin h2 {
+    display: flex;
+    padding: 15px;
+    background-color:$color-fondo;
+    text-align: center;
+    Justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: $color-paleta-uno;
+    font-size: 8px; 
+}

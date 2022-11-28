@@ -2,3 +2,104 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  /*para el footer fijo*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #230b00;
+    /*para que se aleje del lateral*/
+    padding: 0 30px;
+    /*para que la barra quede fija*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; }
+    body header h1 {
+      margin-top: 8px;
+      color: #d4cfa5;
+      font-family: 'Six Caps', sans-serif;
+      font-size: 45px; }
+  body main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding-top: 100px;
+    justify-content: space-around; }
+  body footer {
+    /*para el footer fijo*/
+    margin-top: auto; }
+    body footer h2 {
+      display: flex;
+      padding: 15px;
+      background-color: #230b00;
+      text-align: center;
+      Justify-content: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      color: #d4cfa5;
+      font-size: 8px; }
+
+/* estilo del body */
+.navbar-toggler {
+  color: #d4cfa5; }
+
+.navbar-collapse {
+  text-align: center; }
+
+.formato-menu {
+  background-color: #230b00; }
+
+.formato-botones {
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  color: #d4cfa5;
+  text-shadow: 3px 3px 3px #f8ecd4;
+  background-color: #230b00;
+  font-size: 22px; }
+
+.detalle-texto {
+  display: block;
+  text-align: justify;
+  width: 900px;
+  font-family: 'Dancing Script', cursive;
+  color: #230b00;
+  text-shadow: 3px 7px 10px #230b00;
+  font-size: 21px; }
+
+@media screen and (max-width: 575.98px) {
+  /*letras guns and roses del header*/
+  h1 {
+    font-size: 35px; }
+  /*botones del header*/
+  .formato-botones {
+    font-size: 15px; }
+  /*imagen del home*/
+  main div p img {
+    width: min-content; }
+  /*texto del home*/
+  .detalle-texto {
+    padding: 0 30px;
+    font-size: 15px;
+    width: max-content; } }
+
+@media screen and (max-width: 991.98px) {
+  /*letras guns and roses del header*/
+  h1 {
+    font-size: 35px; }
+  /*botones del header*/
+  .formato-botones {
+    font-size: 15px; }
+  /*imagen del home*/
+  main div p img {
+    width: min-content; }
+  /*texto del home*/
+  .detalle-texto {
+    padding: 0 30px;
+    font-size: 15px;
+    width: max-content; } }
