@@ -26,6 +26,8 @@ body {
       color: #d4cfa5;
       font-family: 'Six Caps', sans-serif;
       font-size: 45px; }
+    body header nav div button span {
+      margin: 0 5px 0 15px; }
   body main {
     flex-wrap: wrap;
     margin: 5px;
@@ -185,7 +187,7 @@ body {
   font-family: 'Dancing Script', cursive;
   position: relative; }
 
-main form p input {
+body main form p input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -197,7 +199,7 @@ main form p input {
   transition: all 0.3s;
   border-bottom: 2px solid #230b00; }
 
-main form buttonform {
+body main form buttonform {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
@@ -215,9 +217,6 @@ input:focus {
 buttonform:hover {
   background: #230b00;
   color: #e6e6e6; }
-
-span {
-  margin: 0 5px 0 15px; }
 
 @media screen and (max-width: 991.98px) {
   .form {

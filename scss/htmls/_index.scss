@@ -8,6 +8,15 @@ body {
         h1 {
             @include h1;
         }
+        nav{
+            div{
+                button{
+                    span {
+                        margin: 0 5px 0 15px;
+                    }
+                }
+            }
+        }
     }
     main {
         @extend %estiloflex;

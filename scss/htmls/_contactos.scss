@@ -11,33 +11,35 @@
     font-family: 'Dancing Script', cursive;
     position: relative;
 }
-main {
-    form {
-        p {
-            input {
-                width: 100%;
-                padding: 10px;
-                box-sizing: border-box;
-                background: none;
-                outline: none;
-                resize: none;
-                border: 0;
-                font-family: 'Dancing Script', cursive;
-                transition: all 0.3s;
-                border-bottom: 2px solid $color-fondo;
+body{
+    main {
+        form {
+            p {
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    background: none;
+                    outline: none;
+                    resize: none;
+                    border: 0;
+                    font-family: 'Dancing Script', cursive;
+                    transition: all 0.3s;
+                    border-bottom: 2px solid $color-fondo;
+                }
             }
-        }
-        buttonform {
-            float: right;
-            padding: 8px 12px;
-            margin: 8px 0 0;
-            border-radius: 8px;
-            font-family: 'Dancing Script', cursive;
-            border: 2px solid $color-fondo;
-            background: 0;
-            color: $color-buttonform;
-            cursor: pointer;
-            transition: all 0.3s;
+            buttonform {
+                float: right;
+                padding: 8px 12px;
+                margin: 8px 0 0;
+                border-radius: 8px;
+                font-family: 'Dancing Script', cursive;
+                border: 2px solid $color-fondo;
+                background: 0;
+                color: $color-buttonform;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
         }
     }
 }
@@ -47,9 +49,6 @@ input:focus {
 buttonform:hover {
     background: $color-fondo;
     color: $color-formhover;
-}
-span {
-    margin: 0 5px 0 15px;
 }
 @media screen and (max-width:991.98px) {
     .form {
